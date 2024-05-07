@@ -37,7 +37,10 @@ select nome, matricula, nascimento,curso from alunos;
 select * from alunos where nascimento > 2004-01-01;
 
 -- 8
+select nome, curso from alunos;
 
+-- 9
+select nome from alunos order by nome asc;
 
-
-
+-- 10
+select curso, count(*) as total_alunos from alunos group by curso;
