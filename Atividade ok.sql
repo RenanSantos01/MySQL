@@ -26,10 +26,10 @@ DELETE FROM alunos WHERE matricula = 478; -- comando utilizado para remover algo
 update alunos set nascimento = '2003-05-07' where matricula = 467;  -- comando utilizado para atualizar algo específico da tabela alunos
 
 -- 4
-commit;
+commit; -- comando utilizado para tornar permanente as alterações realizadas em uma (transação): conjunto de operações executadas no banco de dados
 
 -- 5
-rollback;
+rollback; -- comando utilizado para desfazer alterações feitas em uma transação. obs: só pode ser utlizado se o commit não tiver sido utilizado
 
 -- 6
 select nome, matricula, nascimento,curso from alunos;  
