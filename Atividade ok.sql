@@ -1,6 +1,8 @@
 create database alunosenai;
 use alunosenai;
 
+-- 1 Insira um novo aluno na tabela de alunos com as seguintes informações: nome, idade, curso e matrícula.
+
 create table alunos(
 nome varchar(30) not null, 
 nascimento date,
@@ -17,11 +19,11 @@ insert into alunos (nome, nascimento, curso, matricula) values
 select nome, matricula, nascimento from alunos;  
 
 -- 2
-DELETE FROM alunos WHERE matricula = 478;
+DELETE FROM alunos WHERE matricula = 478; -- comando utilizado para remover algo específico da tabela alunos "necessário PK"
 
 -- 3
 
-update alunos set nascimento = '2003-05-07' where matricula = 467; 
+update alunos set nascimento = '2003-05-07' where matricula = 467;  -- comando utilizado para atualizar algo específico da tabela alunos
 
 -- 4
 commit;
