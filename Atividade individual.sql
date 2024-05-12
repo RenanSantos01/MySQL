@@ -44,4 +44,4 @@ select categoria, count(*) as categoria_produtos from produtos group by categori
 select nome, preco as maior_preco from produtos order by preco desc limit 1; 
 select nome, preco as menor_preco from produtos order by preco asc limit 1;
 
--- 19 
+-- 19
