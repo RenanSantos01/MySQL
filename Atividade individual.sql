@@ -87,4 +87,5 @@ select categoria, count(*) as `total produtos`, avg(preco) as `preco medio`, max
 group by categoria;
 
 -- 20
-select nome, preco from produtos where preco > (select avg (preco) from produtos); -- comando para selecionar os produtos acima da media
+select nome, preco from produtos where preco > (select avg (preco) from produtos); -- comando para selecionar os produtos acima da media 
+
